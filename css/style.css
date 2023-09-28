@@ -106,7 +106,6 @@ html, * {margin: 0px; padding: 0px}
 
 #editor-area {
     width: 13vw;
-
     background-color: rgb(34, 34, 34);
 }
 
@@ -120,6 +119,7 @@ html, * {margin: 0px; padding: 0px}
 
 .editor-area-text-styled {
     font-weight: bold;
+    margin-left: 1px;
 }
 
 .editor-area-icons {
@@ -140,8 +140,15 @@ html, * {margin: 0px; padding: 0px}
 }
 
 #secretDiv1 {
-    height: 500px;
-    flex-grow: 4;
+    height: 85px;
+    flex-basis: 100%;
+    flex-direction: column;
+    margin-left: 20px;
+    border-left: 1px solid rgb(189, 189, 189);
+}
+
+.less-margin {
+    margin-left: 5px;
 }
 
 .hide {
@@ -150,6 +157,10 @@ html, * {margin: 0px; padding: 0px}
 
 .show {
     display: flex;
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 #code-area {
