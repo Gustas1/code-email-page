@@ -1,4 +1,5 @@
 html, * {margin: 0px; padding: 0px}
+* {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 
 #top-bar {
     display: flex;
@@ -94,6 +95,10 @@ html, * {margin: 0px; padding: 0px}
     margin-bottom: 5px;
 }
 
+.side-bar-icons:first-child {
+    margin-top: 10px;
+}
+
 .side-bar-icons-unstretch {
     height: 50px;
     width: 50px;
@@ -103,10 +108,53 @@ html, * {margin: 0px; padding: 0px}
     width: 13vw;
 
     background-color: rgb(34, 34, 34);
+}
 
+.explorer-text {
+    margin-top: 15px;
+}
+
+.editor-area-text {
+    margin-left: 32px;
+}
+
+.editor-area-text-styled {
+    font-weight: bold;
+}
+
+.editor-area-icons {
+    height: 15px;
+    width: 15px;
+    padding: 3px;
+    margin: 0px;
+    padding: 3px;
+    margin-left: 10px;
+}
+
+.editor-area-styling {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+#secretDiv1 {
+    height: 500px;
+    flex-grow: 4;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
 }
 
 #code-area {
     width: 84vw;
     background-color: rgb(21, 21, 21);
 }
+
+

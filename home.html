@@ -35,14 +35,26 @@
                     <div id = "side-bar">
                         <a href = ""><img src = "img/saveicon.png" class = "side-bar-icons"></a>
                         <a href = ""><img src = "img/search.png" class = "side-bar-icons side-bar-icons-unstretch"></a>
-                        <a href = ""><img src = "img/saveicon.png" class = "side-bar-icons"></a>
-                        <a href = ""><img src = "img/saveicon.png" class = "side-bar-icons"></a>
-                        <a href = ""><img src = "img/saveicon.png" class = "side-bar-icons"></a>
-
+                        <a href = ""><img src = "img/sourcecontrol.png" class = "side-bar-icons side-bar-icons-unstretch"></a>
+                        <a href = ""><img src = "img/play.png" class = "side-bar-icons side-bar-icons-unstretch"></a>
+                        <a href = ""><img src = "img/remote.png" class = "side-bar-icons side-bar-icons-unstretch"></a>
                     </div>
                     <div id = "editor-area">
                         <div>
-                            <p>Explorer</p>
+                            <div style = "margin-bottom: 10px;">
+                                <p class = "editor-area-text explorer-text">EXPLORER</p>
+                            </div>
+                            <div class  = "editor-area-styling">
+                                <img src = "img/layout.png" class = "editor-area-icons" onclick="showSecretDiv1()">
+                                <p class = "editor-area-text-styled" onclick="showSecretDiv1()">OPEN EDITORS</p>
+                                <div id = "secretDiv1" class = "hide">
+                                    <p>Hi</p>
+                                </div>
+                            </div>
+                            <div class  = "editor-area-styling">
+                                <img src = "img/layout.png" class = "editor-area-icons">
+                                <p class = "editor-area-text-styled">PROJECTNAME</p>
+                            </div>
                         </div>             
                     </div>
                     <div id = "code-area">
