@@ -6,7 +6,7 @@ html, * {margin: 0px; padding: 0px}
     flex-direction: row;
     width: 100vw;
 
-    background-color: rgb(46, 46, 46);
+    background-color: rgb(59, 59, 59);
 }
 
 #edit-bar {
@@ -15,11 +15,11 @@ html, * {margin: 0px; padding: 0px}
 }
 
 .top-selection {
-    padding: 5px;
-    margin: 5px;
-    margin-top: 5px;
+    padding: 0px;
+    margin: 10px 2px 10px 2px;
+    padding: 4px 10px 4px 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: small;
+    font-size: medium;
     text-decoration: none;
     color: rgb(216, 216, 216);
     border-radius: 5px;
@@ -32,8 +32,9 @@ html, * {margin: 0px; padding: 0px}
 .top-selection-img {
     height: 20px;
     width: 20px;
-    margin: 5px;
+    margin: 7px;
     padding: 5px;
+    margin-top: 9px;
     margin-left: 7px;
     border-radius: 5px;
 }
@@ -46,23 +47,32 @@ html, * {margin: 0px; padding: 0px}
     margin-top: 8px;
 }
 
+.search-icon {
+    height: 20px;
+    width: 20px;
+    padding-top: 5px;
+    margin-right: 6px;
+    margin-left: 11.5vw;
+}
+
 .top-selection-img:hover {
     background-color: rgb(90, 90, 90);
 }
 
 .top-selection-input {
-    height: 25px;
-    width: 20vw;
+    height: 32px;
+    width: 30vw;
     margin: 5px;
     margin-top: 7px;
     text-align: center;
-    background-color: rgb(85, 85, 85);
-    border: 1px solid black;
-    border-radius: 8px;
+    color: rgb(180, 180, 180);
+    background-color: rgb(75, 75, 75);
+    border: 1px solid rgb(108, 108, 108);
+    border-radius: 10px;
 }
 
-.top-selection-input::placeholder {
-    color: rgb(161, 161, 161);
+.top-selection-input > p {
+    padding-top: 4px;
 }
 
 .top-selection-input:hover {
@@ -83,9 +93,18 @@ html, * {margin: 0px; padding: 0px}
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 3vw;
+    width: 3.5vw;
     
-    background-color: rgb(26, 26, 26);
+    background-color: rgb(50, 50, 50);
+}
+
+.side-bar-icons-div {
+    width: 3.4vw;
+    text-align: center;
+}
+
+.highlighted {
+    border-left: 3px solid white;
 }
 
 .side-bar-icons {
@@ -93,6 +112,8 @@ html, * {margin: 0px; padding: 0px}
     width: 45px;
     margin-top: 5px;
     margin-bottom: 5px;
+    margin-left: 3px;
+    margin-right: 2px;
 }
 
 .side-bar-icons:first-child {
@@ -164,8 +185,68 @@ html, * {margin: 0px; padding: 0px}
 }
 
 #code-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
     width: 84vw;
-    background-color: rgb(21, 21, 21);
+    height: max-content;
+    background-color: rgb(27, 27, 27);
 }
 
+.code-header {
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    width: 150px;
+    align-items: center;
+    color: rgb(234, 204, 146);
+    background-color: rgb(44, 44, 44);
+}
+
+.code-header-focused {
+    background-color: rgb(27, 27, 27);
+}
+
+.code-header-text {
+    margin: 5px;
+    margin-right: 2px;
+    padding: 5px;
+}
+
+.code-header-img {
+    height: 15px;
+    width: 15px;
+    margin-left: 10px;
+}
+
+.code-header-m {
+    font-size: small;
+    font-weight: bold;
+    color: rgb(145, 128, 94);
+}
+
+u {
+    text-decoration: none;
+}
+
+.code-color {
+    color: rgba(63,156,203,255)
+}
+
+pre > .code-symbols:first-child {
+    margin-left: 35px;
+}
+
+pre {
+    color: rgba(63,156,203,255)
+}
+
+.code-color-2 {
+    color:lightblue;
+}
+
+.code-symbols {
+    color: grey;
+}
 
