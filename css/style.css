@@ -250,3 +250,9 @@ pre {
     color: grey;
 }
 
+.code-terminal {
+    font-family: monospace;
+    height: 100px;
+    width: 84vw;
+    border-top: 1px solid grey;
+}
