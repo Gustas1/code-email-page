@@ -11,14 +11,14 @@
                     <div id = "top-bar">
                         <div id = "edit-bar">
                             <img src = "img/vsc.png" class = "top-selection-img">
-                            <a href ="" class = "top-selection"><p>File</p></a>
-                            <a href ="" class = "top-selection"><p>Edit</p></a>
-                            <a href ="" class = "top-selection"><p>Selection</p></a>
-                            <a href ="" class = "top-selection"><p>View</p></a>
-                            <a href ="" class = "top-selection"><p>Go</p></a>
-                            <a href ="" class = "top-selection"><p>Run</p></a>
-                            <a href ="" class = "top-selection"><p>Terminal</p></a>
-                            <a href ="" class = "top-selection"><p>Help</p></a>
+                            <p class = "top-selection">File</p>
+                            <p class = "top-selection">Edit</p>
+                            <p class = "top-selection">Selection</p>
+                            <p class = "top-selection">View</p>
+                            <p class = "top-selection">Go</p>
+                            <p class = "top-selection">Run</p>
+                            <p class = "top-selection">Terminal</p>
+                            <p class = "top-selection">Help</p>
                         </div>
                         <div style = "flex-grow: 2;">
                             <div class = "top-selection-input" style = "display: flex; flex-direction: row; ;">
@@ -75,27 +75,38 @@
                         </div>             
                     </div>
                     <div id = "code-area">
-                        <div class = "code-header code-header-focused">
-                            <img src = "img/secondbar.png" class = "code-header-img">
-                            <p class = "code-header-text">home.html</p>
-                            <p class = "code-header-m">M</p>
+                        <div class = "code-header-container">
+                            <div class = "code-header code-header-focused">
+                                <img src = "img/secondbar.png" class = "code-header-img">
+                                <p class = "code-header-text">home.html</p>
+                                <p class = "code-header-m">M</p>
+                            </div>
+                            <div class = "code-header">
+                                <img src = "img/secondbar.png" class = "code-header-img">
+                                <p class = "code-header-text">style.css</p>
+                                <p class = "code-header-m">M</p>
+                            </div>
                         </div>
-                        <div class = "code-header">
-                            <img src = "img/secondbar.png" class = "code-header-img">
-                            <p class = "code-header-text">style.css</p>
-                            <p class = "code-header-m">M</p>
-                        </div>
-                        <div style = "flex-basis: 100%; margin-left: 40px;">
-                            <pre>1<u class = "code-symbols">&lt!</u><u class = "code-color">DOCTYPE</u><u class = "code-color-2"> html</u><u class = "code-symbols">&gt</u></pre>
-                            <pre>2  <u class = "code-symbols">&lt</u><u class = "code-color">html</u><u class = "code-symbols">&gt</u></pre>
-                            <pre>3      <u class = "code-symbols">&lt</u><u class = "code-color">body</u><u class = "code-symbols">&gt</u></pre>
-                            <pre>4          <u class = "code-symbols">&lt</u><u class = "code-color">div</u><u class = "code-symbols">&gt</u></pre>
-                            <pre>5              <u class = "code-symbols">&lt</u><u class = "code-color">h1</u><u class = "code-symbols">&gt</u></pre>
-                            <pre>6                  <u class = "code-symbols">&lt</u><u class = "code-color">p</u><u class = "code-symbols">&gt</u></pre>
+                        <div style = "flex-basis: 100%; margin-left: 40px; height: 60vh">
+                            <pre>1<u class = "code-symbols"></u><u class = "code-color">DOCTYPE</u><u class = "code-color-2"> html</u><u class = "code-symbols"></u></pre>
+                            <pre>2      <u class = "code-symbols"></u><u class = "code-color">html</u><u class = "code-symbols"></u></pre>
+                            <pre>3          <u class = "code-symbols"></u><u class = "code-color">body</u><u class = "code-symbols"></u></pre>
+                            <pre>4              <u class = "code-symbols"></u><u class = "code-color">div</u><u class = "code-symbols"></u></pre>
+                            <pre>5                  <u class = "code-symbols"></u><u class = "code-color">h1</u><u class = "code-symbols"></u><u class = "normal-code">Subject</u><u class = "code-symbols-end"></u>h1<u class = "code-symbols-end"></u></pre>
+                            <pre>6                  <u class = "code-symbols"></u><u class = "code-color">p</u><u class = "code-symbols"></u><u class = "normal-code">Text asdhuasihduaishd</u><u class = "code-symbols-end"></u>p<u class = "code-symbols-end"></u></pre>
 
                         </div>
                         <div class = "code-terminal">
-                            <p id = "terminal-text">PS C:\Users\vilim\Documents\githubprojects\code-email-page-2>hi</p>
+                            <div class = "code-terminal-headings">
+                                <p>PROBLEMS</p>
+                                <p>OUTPUT</p>
+                                <p>DEBUG CONSOLE</p>
+                                <p>TERMINAL</p> 
+                                <p>PORTS</p>
+                            </div>
+                            <div>                            
+                                <p id = "terminal-text"></p>
+                            </div>
                         </div>
                     </div>
                 </div>
