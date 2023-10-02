@@ -10,8 +10,8 @@ function showSecretDiv1() {
     i++;
 }
 
-const gtlt = document.getElementsByClassName('code-symbols');
-const slashlt = document.getElementsByClassName('code-symbols-end');
+const gtlt = document.getElementsByClassName('c-s');
+const slashlt = document.getElementsByClassName('c-s-e');
 
 for(let i = 0; i < gtlt.length; i++) {
     if(i % 2 == 0) {

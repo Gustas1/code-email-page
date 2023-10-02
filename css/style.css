@@ -1,10 +1,15 @@
 html, * {margin: 0px; padding: 0px}
 * {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+body {max-height: 100vh;height: 100vh; overflow: hidden;}
+
+#container {
+    height: 100vh;
+}
 
 #top-bar {
     display: flex;
     flex-direction: row;
-    width: 100vw;
+    width: -webkit-fill-available;
 
     background-color: rgb(59, 59, 59);
 }
@@ -83,8 +88,7 @@ html, * {margin: 0px; padding: 0px}
 #main-content {
     display: flex;
     flex-direction: row;
-    height: 96vh;
-    width: 100vw;
+    height: 96.6vh;
 
     color: rgb(216, 216, 216);
 }
@@ -126,7 +130,7 @@ html, * {margin: 0px; padding: 0px}
 }
 
 #editor-area {
-    width: 13vw;
+    width: 12.5vw;
     background-color: rgb(34, 34, 34);
 }
 
@@ -236,15 +240,11 @@ u {
     text-decoration: none;
 }
 
-.code-color {
+.c-c {
     color: rgba(63,156,203,255)
 }
 
-pre > .code-symbols:first-child {
-    margin-left: 35px;
-}
-
-pre > .code-symbols-end:first-child {
+pre > .c-s:first-child {
     margin-left: 35px;
 }
 
@@ -252,22 +252,27 @@ pre {
     color: rgba(63,156,203,255);
 }
 
-.code-color-2 {
+.c-c-2 {
     color:lightblue;
 }
 
-.code-symbols {
+.c-s {
     color: grey;
 }
 
-.code-symbols-end {
+.c-s-e {
     color: grey;
+}
+
+.n-c {
+    color: white;
 }
 
 .code-terminal {
+    overflow: hidden;
     color: rgb(160, 160, 160);
     font-family: monospace;
-    height: 37.6vh;
+    height: 18vw;
     width: 84vw;
     border-top: 1px solid grey;
     padding-left: 20px;
@@ -284,6 +289,4 @@ pre {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.normal-code {
-    color: white;
-}
+
