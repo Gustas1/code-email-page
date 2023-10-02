@@ -10,6 +10,30 @@ function showSecretDiv1() {
     i++;
 }
 
+for(let i = 0; i < 5; i++) {
+    document.getElementById('cth').getElementsByTagName('p')[i].className = "pointer";
+}
+
+const cod = document.getElementById('coding');
+const allu = cod.getElementsByTagName('u');
+const text = ["Subject: ", "Email body", "Random text"];
+
+for (let i = 0; i < allu.length; i++) {
+    if(allu[i].innerHTML != "") {
+        allu[i].className = "c-c";
+        for(let j = 0; j < text.length; j++) {
+            if(allu[i].innerHTML == text[j]) {
+                allu[i].className = "n-c";
+            }
+        }
+    }
+    if(allu[i].innerHTML == "") {
+        allu[i].className = "c-s";
+    }
+}
+
+allu[1].className = "c-c-2";
+
 const gtlt = document.getElementsByClassName('c-s');
 const slashlt = document.getElementsByClassName('c-s-e');
 
