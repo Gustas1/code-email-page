@@ -35,7 +35,6 @@ for (let i = 0; i < allu.length; i++) {
 allu[1].className = "c-c-2";
 
 const gtlt = document.getElementsByClassName('c-s');
-const slashlt = document.getElementsByClassName('c-s-e');
 
 for(let i = 0; i < gtlt.length; i++) {
     if(i % 2 == 0) {
@@ -47,13 +46,11 @@ for(let i = 0; i < gtlt.length; i++) {
     if(i % 2 != 0) {
         gtlt[i].innerHTML = "&gt";
     }
-}
-
-for(let i = 0; i < slashlt.length; i++) {
-    if(i % 2 == 0) {
-        slashlt[i].innerHTML = "&lt/";
-    } else {
-        slashlt[i].innerHTML = "&gt";
+    if(i >= 20) {
+        if(i % 2 == 0) {
+            console.log(gtlt[i].innerHTML)
+            gtlt[i].innerHTML = "&lt/";
+        }
     }
 }
 
