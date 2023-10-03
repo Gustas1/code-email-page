@@ -78,6 +78,21 @@ function unWrite(id, k, sp) {
   }
 }
 
+let j = 0;
+const csspage = document.getElementById('csspage');
+const coding = document.getElementById('coding');
+function showCSSDiv() { 
+    if(j % 2 == 0) {
+        csspage.style.display = "flex";
+        coding.style.display = "none";
+    }
+    if(j % 2 != 0) {
+        csspage.style.display = "none";
+        coding.style.display = "flex";
+    }
+    j++;
+}
+
 // let counter = 0;
 // function writeSearch() {
 //     setTimeout(unWrite, 1000, "email-type", "send-me-mail", 40);
@@ -89,10 +104,6 @@ function unWrite(id, k, sp) {
 // }
 
 setTimeout(write, 500, "email-type", "send-an-email", 0, 40);
-
-  
-setTimeout(
-  write, 1300, "terminal-text", "PS C:\\Users\\vilim\\Documents\\githubprojects\\code-email-page-2>hi", 0, 20
-)
+setTimeout(write, 1300, "terminal-text", "PS C:\\Users\\vilim\\Documents\\githubprojects\\code-email-page-2>hi", 0, 20)
 
   
