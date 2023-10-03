@@ -3,9 +3,11 @@ let i = 0;
 function showSecretDiv1() {
     if (i % 2 == 0) {
         swap("secretDiv1", "show");
+        document.getElementById('drop-down-arrow-1').src = "img/droparrow2.png";
     }
     if (i % 2 != 0) {
         swap("secretDiv1", "show");
+        document.getElementById('drop-down-arrow-1').src = "img/droparrow.png";
     }
     i++;
 }
@@ -66,7 +68,31 @@ function write(id, text, k, sp) {
     }
   }
 
+function unWrite(id, k, sp) {
+  let text = document.getElementById(id).innerText; 
+  k = text.length;
+  if (k > 0) {
+      document.getElementById(id).innerText = text.replace(text.charAt(text.length-1), "");
+      k--;
+      setTimeout(unWrite, sp, id, k, sp);
+  }
+}
+
+// let counter = 0;
+// function writeSearch() {
+//     setTimeout(unWrite, 1000, "email-type", "send-me-mail", 40);
+//     counter++;
+
+//     if(counter < 0) {
+//         writeSearch()
+//     }
+// }
+
+setTimeout(write, 500, "email-type", "send-an-email", 0, 40);
+
   
-  setTimeout(
-    write, 1300, "terminal-text", "PS C:\\Users\\vilim\\Documents\\githubprojects\\code-email-page-2>hi", 0, 20
-  )
+setTimeout(
+  write, 1300, "terminal-text", "PS C:\\Users\\vilim\\Documents\\githubprojects\\code-email-page-2>hi", 0, 20
+)
+
+  

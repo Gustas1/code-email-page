@@ -65,10 +65,10 @@ body {max-height: 100vh;height: 100vh; overflow: hidden;}
 }
 
 .top-selection-input {
-    height: 32px;
+    height: 28px;
     width: 30vw;
     margin: 5px;
-    margin-top: 7px;
+    margin-top: 10px;
     text-align: center;
     color: rgb(180, 180, 180);
     background-color: rgb(75, 75, 75);
@@ -156,6 +156,10 @@ body {max-height: 100vh;height: 100vh; overflow: hidden;}
     margin-left: 10px;
 }
 
+.no-margin {
+    margin-left: 0px;
+}
+
 .editor-area-styling {
     display: flex; 
     flex-direction: row;
@@ -212,6 +216,11 @@ body {max-height: 100vh;height: 100vh; overflow: hidden;}
     align-items: center;
     color: rgb(234, 204, 146);
     background-color: rgb(44, 44, 44);
+}
+
+.code-header:hover {
+    background-color: rgb(27, 27, 27);
+    cursor:pointer;
 }
 
 .code-header-focused {
