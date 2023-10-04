@@ -116,10 +116,11 @@ hr {
     border-right: none; 
     border-top: none;
     border-left: none;
+    border-color: rgb(180, 180, 180);
 }
 
 .dropdown-content > p:hover {
-    background-color: rgb(46, 46, 125);
+    background-color: rgb(48, 48, 146);
 }
 
 #main-content {
@@ -144,7 +145,7 @@ hr {
     text-align: center;
 }
 
-.highlighted {
+.side-bar-icons-div:hover {
     border-left: 3px solid white;
 }
 
@@ -211,6 +212,10 @@ hr {
     flex-direction: column;
     margin-left: 20px;
     border-left: 1px solid rgb(189, 189, 189);
+}
+
+#secretDiv1 > div {
+    display: flex;
 }
 
 .less-margin {
@@ -282,6 +287,33 @@ hr {
     color: rgb(145, 128, 94);
 }
 
+.code-header-below {
+    display: flex;
+    flex-direction: row;
+    width: -webkit-fill-available;
+    margin-top: 5px;
+}
+
+.code-header-below-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.code-header-below-content > img {
+    margin-top: 5px;
+}
+
+.code-header-below-content > img:first-child {
+    margin-right: 6px;
+}
+
+.coding-class {
+    flex-basis: 100%; 
+    margin-left: 40px; 
+    margin-top: 20px;
+    height: 61vh;
+}
+
 u {
     text-decoration: none;
 }
@@ -327,6 +359,14 @@ pre {
     border: none;
 }
 
+.css-class {
+    display: none; 
+    margin-left: 40px;
+    margin-top: 20px;
+    height: 61vh; 
+    flex-direction: column;
+}
+
 .code-terminal {
     overflow: hidden;
     color: rgb(160, 160, 160);
@@ -354,4 +394,5 @@ pre {
     color: rgb(202, 202, 202);
     border-bottom: 1px solid rgb(202, 202, 202);
 }
+
 

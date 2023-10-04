@@ -18,7 +18,7 @@ for(let i = 0; i < 5; i++) {
 
 const cod = document.getElementById('coding');
 const allu = cod.getElementsByTagName('u');
-const text = ["Subject: ", "Email body", "Random text"];
+const text = ["Subject: ", "Email body", "Body: "];
 
 for (let i = 0; i < allu.length; i++) {
     if(allu[i].innerHTML != "") {
@@ -48,12 +48,12 @@ for(let i = 0; i < gtlt.length; i++) {
     if(i % 2 != 0) {
         gtlt[i].innerHTML = "&gt";
     }
-    if(i >= 20) {
-        if(i % 2 == 0) {
-            console.log(gtlt[i].innerHTML)
-                gtlt[i].innerHTML = "&lt/";
-        }       
-    }
+    // if(i >= 21) {
+    //     if(i % 2 == 0) {
+    //         console.log(gtlt[i].innerHTML)
+    //             gtlt[i].innerHTML = "&lt/";
+    //     }       
+    // }
 }
 
 function swap(id, cls) {
