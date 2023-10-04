@@ -16,7 +16,32 @@
                             <p class = "top-selection">Selection</p>
                             <p class = "top-selection">View</p>
                             <p class = "top-selection">Go</p>
+                            <div class = "dropdown">
                             <p class = "top-selection">Run</p>
+                                <div class = "dropdown-content">
+                                    <p>Start Debugging</p>
+                                    <p>Run Without Debugging</p>
+                                    <p>Stop Debugging</p>
+                                    <p>Restart Debugging</p>
+                                    <hr>s
+                                    <p>Open Configurations</p>
+                                    <p>Add Configurations</p>
+                                    <hr>
+                                    <p>Step Over</p>
+                                    <p>Step Into</p>
+                                    <p>Step Out</p>
+                                    <p>Continue</p>
+                                    <hr>
+                                    <p>Toggle Breakpoint</p>
+                                    <p>New Breakpoint</p>
+                                    <hr>
+                                    <p>Enable All Breakpoints</p>
+                                    <p>Disable All Breakpoints</p>
+                                    <p>Remove All Breakpoints</p>
+                                    <hr>
+                                    <p>Install Additional Debuggers</p>
+                                </div>
+                            </div>
                             <p class = "top-selection">Terminal</p>
                             <p class = "top-selection">Help</p>
                         </div>
@@ -76,12 +101,12 @@
                     </div>
                     <div id = "code-area">
                         <div class = "code-header-container">
-                            <div class = "code-header code-header-focused">
+                            <div id = "htmlHdr" class = "code-header" onclick = "showHTMLDiv()">
                                 <img src = "img/html.png" class = "code-header-img">
                                 <p class = "code-header-text">home.html</p>
                                 <p class = "code-header-m">M</p>
                             </div>
-                            <div class = "code-header" onclick = "showCSSDiv()">
+                            <div id = "cssHdr" class = "code-header" onclick = "showCSSDiv()">
                                 <img src = "img/css.png" class = "code-header-img">
                                 <p class = "code-header-text">style.css</p>
                                 <p class = "code-header-m">M</p>    
@@ -98,7 +123,7 @@
                                 <pre>2      <u></u><u>html</u><u></u></pre>
                                 <pre>3          <u></u><u>body</u><u></u></pre>
                                 <pre>4              <u></u><u>div</u><u></u></pre>
-                                <pre>5                  <u></u><u>h1</u><u></u><u>Subject: </u><input type = "text" class = "c-i" placeholder = "Enter the subject here!"><u></u>h1<u ></u></pre>
+                                <pre>5                  <u></u><u>h1</u><u></u><u>Subject: </u><input type = "text" class = "c-i" placeholder = "Enter the subject here!" name = "subject"><u></u>h1<u ></u></pre>
                                 <pre>6                  <u></u><u>p</u><u></u><u>Email body</u><u></u>p<u></u></pre>
                                 <pre>7                  <u></u><u>p</u><u></u><u>Random text</u><u></u>p<u></u></pre>
                                 <pre>8              <u></u><u>div</u><u></u></pre>

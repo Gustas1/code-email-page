@@ -51,8 +51,8 @@ for(let i = 0; i < gtlt.length; i++) {
     if(i >= 20) {
         if(i % 2 == 0) {
             console.log(gtlt[i].innerHTML)
-            gtlt[i].innerHTML = "&lt/";
-        }
+                gtlt[i].innerHTML = "&lt/";
+        }       
     }
 }
 
@@ -68,7 +68,7 @@ function write(id, text, k, sp) {
     }
   }
 
-function unWrite(id, k, sp) {
+  function unWrite(id, k, sp) {
   let text = document.getElementById(id).innerText; 
   k = text.length;
   if (k > 0) {
@@ -81,16 +81,25 @@ function unWrite(id, k, sp) {
 let j = 0;
 const csspage = document.getElementById('csspage');
 const coding = document.getElementById('coding');
+
+const htmlhdr = document.getElementById('htmlHdr');
+const cssHdr = document.getElementById('cssHdr');
+
+htmlHdr.style.backgroundColor = "rgb(27, 27, 27)";
+
 function showCSSDiv() { 
-    if(j % 2 == 0) {
-        csspage.style.display = "flex";
-        coding.style.display = "none";
-    }
-    if(j % 2 != 0) {
-        csspage.style.display = "none";
-        coding.style.display = "flex";
-    }
-    j++;
+    csspage.style.display = "flex";
+    coding.style.display = "none";
+    cssHdr.style.backgroundColor = "rgb" + "(" + 27 + "," + 27 + "," + 27 + ")"
+    htmlHdr.style.backgroundColor = "rgb" + "(" + 44 + "," + 44 + "," + 44 + ")"
+}
+
+let k = 0;
+function showHTMLDiv() {
+    csspage.style.display = "none";
+    coding.style.display = "flex";
+    htmlHdr.style.backgroundColor = "rgb" + "(" + 27 + "," + 27 + "," + 27 + ")"
+    cssHdr.style.backgroundColor = "rgb" + "(" + 44 + "," + 44 + "," + 44 + ")"
 }
 
 // let counter = 0;

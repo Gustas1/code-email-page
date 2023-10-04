@@ -85,6 +85,43 @@ body {max-height: 100vh;height: 100vh; overflow: hidden;}
     border: 1px solid rgb(65, 65, 65);
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color: rgb(180, 180, 180);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    width: 350px;
+    position: absolute;
+    background-color: #313131;
+    z-index: 1;
+    border-radius: 3px;
+}
+
+.dropdown-content > p {
+    font-size: medium;
+    padding: 5px 5px 5px 40px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+hr {
+    height: 1px;
+    border-right: none; 
+    border-top: none;
+    border-left: none;
+}
+
+.dropdown-content > p:hover {
+    background-color: rgb(46, 46, 125);
+}
+
 #main-content {
     display: flex;
     flex-direction: row;
