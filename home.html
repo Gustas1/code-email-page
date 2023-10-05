@@ -11,44 +11,115 @@
                     <div id = "top-bar">
                         <div id = "edit-bar">
                             <img src = "img/vsc.png" class = "top-selection-img">
-                            <p class = "top-selection">File</p>
-                            <p class = "top-selection">Edit</p>
+                            <div class = "dropdown">
+                                <p class = "top-selection">File</p>
+                                    <div class = "dropdown-content">
+                                        <p>New Text File</p>
+                                        <p>New File</p>
+                                        <p>New Window</p>
+                                        <hr>
+                                        <p>Open File...</p>
+                                        <p>Open Folder...</p>
+                                        <p>Open Workspace From File...</p>
+                                        <p>Open Recent</p>
+                                        <hr>
+                                        <p>Add Folder to Workspace...</p>
+                                        <p>Save Workspace As...</p>
+                                        <p>Dupilcate Workspace</p>
+                                        <hr>
+                                        <p>Save</p>
+                                        <p>Save As...</p>
+                                        <p>Save All</p>
+                                        <hr>
+                                        <p>Share</p>
+                                        <hr>
+                                        <p>Auto Save</p>
+                                        <p>Preferences</p>
+                                        <hr>
+                                        <p>Revert File</p>
+                                        <p>Close Editor</p>
+                                        <p>Close Folder</p>
+                                        <p>Close Window</p>
+                                        <hr>
+                                        <p>Exit</p>
+                                    </div>
+                            </div>
+                            <div class = "dropdown">
+                                <p class = "top-selection">Edit</p>
+                                    <div class = "dropdown-content">
+                                        <p>Undo</p>
+                                        <p>Redo</p>
+                                        <hr>
+                                        <p>Cut</p>
+                                        <p>Copy</p>
+                                        <p>Copy As</p>
+                                        <p>Paste</p>
+                                    </div>
+                            </div>
                             <p class = "top-selection">Selection</p>
                             <p class = "top-selection">View</p>
                             <p class = "top-selection">Go</p>
                                 <div class = "dropdown">
-                                <p class = "top-selection">Run</p>
-                                    <div class = "dropdown-content">
-                                    <p>Start Debugging</p>
-                                    <p>Run Without Debugging</p>
-                                    <p>Stop Debugging</p>
-                                    <p>Restart Debugging</p>
-                                    <hr>
-                                    <p>Open Configurations</p>
-                                    <p>Add Configurations</p>
-                                    <hr>
-                                    <p>Step Over</p>
-                                    <p>Step Into</p>
-                                    <p>Step Out</p>
-                                    <p>Continue</p>
-                                    <hr>
-                                    <p>Toggle Breakpoint</p>
-                                    <p>New Breakpoint</p>
-                                    <hr>
-                                    <p>Enable All Breakpoints</p>
-                                    <p>Disable All Breakpoints</p>
-                                    <p>Remove All Breakpoints</p>
-                                    <hr>
-                                    <p>Install Additional Debuggers</p>
-                                    </div>
+                                    <p class = "top-selection">Run</p>
+                                        <div class = "dropdown-content">
+                                        <p>Start Debugging</p>
+                                        <p>Run Without Debugging</p>
+                                        <p>Stop Debugging</p>
+                                        <p>Restart Debugging</p>
+                                        <hr>
+                                        <p>Open Configurations</p>
+                                        <p>Add Configurations</p>
+                                        <hr>
+                                        <p>Step Over</p>
+                                        <p>Step Into</p>
+                                        <p>Step Out</p>
+                                        <p>Continue</p>
+                                        <hr>
+                                        <p>Toggle Breakpoint</p>
+                                        <p>New Breakpoint</p>
+                                        <hr>
+                                        <p>Enable All Breakpoints</p>
+                                        <p>Disable All Breakpoints</p>
+                                        <p>Remove All Breakpoints</p>
+                                        <hr>
+                                        <p>Install Additional Debuggers</p>
+                                        </div>
                                 </div>
                             <p class = "top-selection">Terminal</p>
-                            <p class = "top-selection">Help</p>
+                                <div class = "dropdown">
+                                    <p class = "top-selection">Help</p>
+                                        <div class = "dropdown-content" style = "width: 300px;">
+                                            <p>Welcome</p>
+                                            <p>Show All Commands</p>
+                                            <p>Documentations</p>
+                                            <p>Editor Playground</p>
+                                            <p>Show Release Notes</p>
+                                            <hr>
+                                            <p>Keyboard Shortcuts Reference</p>
+                                            <p>Video Tutorials</p>
+                                            <p>Tips and Tricks</p>
+                                            <hr>
+                                            <p>Join Us on YouTube</p>
+                                            <p>Search Feature Requests</p>
+                                            <p>Report Issues</p>
+                                            <hr>
+                                            <p>View License</p>
+                                            <p>Privacy Statement</p>
+                                            <hr>
+                                            <p>Toggle Developer Tools</p>
+                                            <p>Open Process Explorer</p>
+                                            <hr>
+                                            <p>Restart to Update</p>
+                                            <hr>
+                                            <p>Created by Gustas</p>
+                                        </div>
+                                </div>
                         </div>
                         <div style = "flex-grow: 2;">
                             <div class = "top-selection-input" style = "display: flex; flex-direction: row; ;">
                                 <img src = "img/search.png" class = "search-icon">
-                                <p id = "email-type"></p></div>                        
+                                <p id = "email-type"></p>
+                            </div>                        
                         </div>
                         <div style = "flex-wrap: 5; margin-right: 10px;">
                             <img src ="img/primarybar.png" class = "top-selection-img top-selection-img-icons">
@@ -122,7 +193,6 @@
                             <div class = "code-header-below-content"><img src = "img/component.png" class = "code-header-img"><p>html</p><img src = "img/droparrow.png" class = "code-header-img"></div>
                             <div class = "code-header-below-content"><img src = "img/component.png" class = "code-header-img"><p>body</p><img src = "img/droparrow.png" class = "code-header-img"></div>
                             <div class = "code-header-below-content"><img src = "img/component.png" class = "code-header-img"><p>div</p></div>
-
                         </div>
                         <div id = "coding" class = "coding-class">
                             <form action = "mailto:vilimas.gustas@gmail.com" method = "post" enctype = "text/plain">
