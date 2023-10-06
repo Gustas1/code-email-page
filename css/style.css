@@ -364,7 +364,7 @@ pre {
     margin-left: 40px;
     margin-top: 20px;
     height: 61vh; 
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .code-terminal {
@@ -395,7 +395,15 @@ pre {
     border-bottom: 1px solid rgb(202, 202, 202);
 }
 
-.css-class > pre {
+#css-div-nums {
+    color: rgba(63,156,203,255);
+}
+
+#css-div-nums > p {
+    margin-right: 20px;
+}
+
+div > pre {
     color: white;
 }
 

@@ -59,9 +59,9 @@ for(let i = 0; i < gtlt.length; i++) {
 const cssdiv = document.getElementById('csspage');
 const allcssu = cssdiv.getElementsByTagName('u');
 const symbols = [',', ':', ';', ': ', '; '];
-const htmltags = ['html', 'body', '#container'];
-const csstags  = ['margin', 'padding', 'font-family', 'max-height', 'height', 'overflow'];
-const values = ['0px', '100vh', 'hidden'];
+const htmltags = ['html', 'body', '#container', '#top-bar'];
+const csstags  = ['margin', 'padding', 'font-family', 'max-height', 'height', 'overflow', 'display', 'flex-direction', 'width'];
+const values = ['0px', '100vh'];
 for(let i = 0; i < allcssu.length; i++) {
     for(let j = 0; j < symbols.length; j++) {
         if(allcssu[i].innerHTML == symbols[j]) {
@@ -92,6 +92,12 @@ for(let i = 0; i < allcssu.length; i++) {
     if(allcssu[i].innerHTML == "'Segoe UI'") {
         allcssu[i].className = "css-font";
     }
+}
+
+const cssdivnum = document.getElementById('css-div-nums');
+const pdivnum = cssdivnum.getElementsByTagName('p');
+for(let i = 0; i < pdivnum.length; i++) {
+    pdivnum[i].innerHTML = i+1;
 }
 
 
