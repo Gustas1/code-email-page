@@ -394,3 +394,31 @@ pre {
     color: rgb(202, 202, 202);
     border-bottom: 1px solid rgb(202, 202, 202);
 }
+
+.css-class > pre {
+    color: white;
+}
+
+.css-symbols {
+    color: white;
+}
+
+.css-html {
+    color: rgba(203,171,110,255)
+}
+
+.css-tags {
+    color:lightblue;
+}
+
+.css-values {
+    color: rgb(172, 211, 172);
+}
+
+.css-font {
+    color: rgb(197, 133, 101);
+}
+
+.squigly { 
+    color: yellow;
+}
