@@ -100,6 +100,12 @@ for(let i = 0; i < pdivnum.length; i++) {
     pdivnum[i].innerHTML = i+1;
 }
 
+const jsdivnum = document.getElementById('js-div-nums');
+const jspnum = jsdivnum.getElementsByTagName('p');
+for(let i = 0; i < jspnum.length; i++) {
+    jspnum[i].innerHTML = i+1;
+}
+
 
 function swap(id, cls) {
     document.getElementById(id).classList.toggle(cls);
@@ -126,25 +132,40 @@ function write(id, text, k, sp) {
 let j = 0;
 const csspage = document.getElementById('csspage');
 const coding = document.getElementById('coding');
+const jspage = document.getElementById('jspage');
 
 const htmlhdr = document.getElementById('htmlHdr');
 const cssHdr = document.getElementById('cssHdr');
+const jsHdr = document.getElementById('jsHdr');
 
 htmlHdr.style.backgroundColor = "rgb(27, 27, 27)";
 
 function showCSSDiv() { 
     csspage.style.display = "flex";
     coding.style.display = "none";
+    jspage.style.display = "none";
     cssHdr.style.backgroundColor = "rgb" + "(" + 27 + "," + 27 + "," + 27 + ")"
     htmlHdr.style.backgroundColor = "rgb" + "(" + 44 + "," + 44 + "," + 44 + ")"
+    jsHdr.style.backgroundColor = "rgb" + "(" + 44 + "," + 44 + "," + 44 + ")"
 }
 
 let k = 0;
 function showHTMLDiv() {
     csspage.style.display = "none";
     coding.style.display = "flex";
+    jspage.style.display = "none";
     htmlHdr.style.backgroundColor = "rgb" + "(" + 27 + "," + 27 + "," + 27 + ")"
     cssHdr.style.backgroundColor = "rgb" + "(" + 44 + "," + 44 + "," + 44 + ")"
+    jsHdr.style.backgroundColor = "rgb" + "(" + 44 + "," + 44 + "," + 44 + ")"
+}
+
+function showJSDiv() {
+    csspage.style.display = "none";
+    coding.style.display = "none";
+    jspage.style.display = "flex";
+    htmlHdr.style.backgroundColor = "rgb" + "(" + 44 + "," + 44 + "," + 44 + ")"
+    cssHdr.style.backgroundColor = "rgb" + "(" + 44 + "," + 44 + "," + 44 + ")"
+    jsHdr.style.backgroundColor = "rgb" + "(" + 27 + "," + 27 + "," + 27 + ")"
 }
 
 setTimeout(write, 500, "email-type", "send-an-email", 0, 40);

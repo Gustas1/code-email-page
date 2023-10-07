@@ -397,6 +397,7 @@ pre {
 
 #css-div-nums {
     color: rgba(63,156,203,255);
+    text-align: right;
 }
 
 #css-div-nums > p {
@@ -429,4 +430,16 @@ div > pre {
 
 .squigly { 
     color: yellow;
+}
+
+.js-class {
+    display: none; 
+    margin-left: 40px;
+    margin-top: 20px;
+    height: 61vh; 
+    flex-direction: row;
+}
+
+#js-div-nums {
+    text-align: right;
 }
