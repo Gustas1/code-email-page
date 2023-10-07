@@ -56,6 +56,51 @@ for(let i = 0; i < gtlt.length; i++) {
     // }
 }
 
+const cssdiv = document.getElementById('csspage');
+const allcssu = cssdiv.getElementsByTagName('u');
+const symbols = [',', ':', ';', ': ', '; '];
+const htmltags = ['html', 'body', '#container', '#top-bar'];
+const csstags  = ['margin', 'padding', 'font-family', 'max-height', 'height', 'overflow', 'display', 'flex-direction', 'width'];
+const values = ['0px', '100vh'];
+for(let i = 0; i < allcssu.length; i++) {
+    for(let j = 0; j < symbols.length; j++) {
+        if(allcssu[i].innerHTML == symbols[j]) {
+            allcssu[i].className = "css-symbols";
+        }
+    }
+    for(let k = 0; k < htmltags.length; k++) {
+        if(allcssu[i].innerHTML == htmltags[k]) {
+            allcssu[i].className = "css-html";
+        }
+    }
+    for(let l = 0; l < csstags.length; l++) {
+        if(allcssu[i].innerHTML == csstags[l]) {
+            allcssu[i].className = "css-tags";
+        }
+    }
+    for(let z = 0; z < values.length; z++) {
+        if(allcssu[i].innerHTML == values[z]) {
+            allcssu[i].className = "css-values";
+        }
+    }
+    if(allcssu[i].innerHTML == "{" || allcssu[i].innerHTML == "}") {
+        allcssu[i].className = "squigly";
+    }
+    if(allcssu[i].innerHTML == "*") {
+        allcssu[i].className = "c-c";
+    }
+    if(allcssu[i].innerHTML == "'Segoe UI'") {
+        allcssu[i].className = "css-font";
+    }
+}
+
+const cssdivnum = document.getElementById('css-div-nums');
+const pdivnum = cssdivnum.getElementsByTagName('p');
+for(let i = 0; i < pdivnum.length; i++) {
+    pdivnum[i].innerHTML = i+1;
+}
+
+
 function swap(id, cls) {
     document.getElementById(id).classList.toggle(cls);
 }
@@ -101,16 +146,6 @@ function showHTMLDiv() {
     htmlHdr.style.backgroundColor = "rgb" + "(" + 27 + "," + 27 + "," + 27 + ")"
     cssHdr.style.backgroundColor = "rgb" + "(" + 44 + "," + 44 + "," + 44 + ")"
 }
-
-// let counter = 0;
-// function writeSearch() {
-//     setTimeout(unWrite, 1000, "email-type", "send-me-mail", 40);
-//     counter++;
-
-//     if(counter < 0) {
-//         writeSearch()
-//     }
-// }
 
 setTimeout(write, 500, "email-type", "send-an-email", 0, 40);
 setTimeout(write, 1300, "terminal-text", "PS C:\\Users\\vilim\\Documents\\githubprojects\\code-email-page-2>hi", 0, 20)
