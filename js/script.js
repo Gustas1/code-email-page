@@ -56,6 +56,28 @@ for(let i = 0; i < gtlt.length; i++) {
     // }
 }
 
+const tags = ['html', 'body', 'div', 'h1', 'h2', 'p']
+let counter = 0;
+for(let j = 0; j < tags.length; j++) {
+   for(let i = 3; i < allu.length; i++) {
+        if(allu[i].innerHTML == tags[j]) {
+             counter++;
+        }
+        if(allu[i].innerHTML == tags[2] && counter % 2 == 0) {
+            allu[i-1].innerHTML = "&lt";
+        }
+        if(allu[i].innerHTML == tags[2] && i > 20) {
+            allu[i-1].innerHTML = "&lt/";
+        }
+        if(allu[i].innerHTML == tags[j] && counter % 2 == 0) {
+            allu[i-1].innerHTML = "&lt/";
+            counter = 0;
+        }
+   }
+}
+
+
+
 const cssdiv = document.getElementById('csspage');
 const allcssu = cssdiv.getElementsByTagName('u');
 const symbols = [',', ':', ';', ': ', '; '];

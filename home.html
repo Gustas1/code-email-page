@@ -298,13 +298,13 @@
                                 <pre>  2      <u></u><u>html</u><u></u></pre>
                                 <pre>  3          <u></u><u>body</u><u></u></pre>
                                 <pre>  4              <u></u><u>div</u><u></u></pre>
-                                <pre>  5                  <u></u><u>h1</u><u></u><u>Subject: </u><input type = "text" class = "c-i" placeholder = "Enter the subject here!" name = "subject"><u></u>h1<u></u></pre>
-                                <pre>  7                      <u></u><u>div<u></u></pre>
-                                <pre>  8                        <u></u><u>h2</u><u></u><u>Email body</u><u></u>h2<u></u></pre>
-                                <pre>  9                        <u></u><u>p</u><u></u><u><u>Body: </u><input type = "text" class = "c-i" placeholder = "Enter your info here!" name = "content"></u><u></u>p<u></u></pre>
+                                <pre>  5                  <u></u><u>h1</u><u></u><u>Subject: </u><input type = "text" class = "c-i" placeholder = "Enter the subject here!" name = "subject"><u></u><u>h1</u><u></u></pre>
+                                <pre>  7                      <u></u><u>div</u><u></u></pre>
+                                <pre>  8                        <u></u><u>h2</u><u></u><u>Email body</u><u></u><u>h2</u><u></u></pre>
+                                <pre>  9                        <u></u><u>p</u><u></u><u>Body: </u><input type = "text" class = "c-i" placeholder = "Enter your info here!" name = "content"></u><u></u><u>p</u><u></u></pre>
                                 <pre>10                      <u></u><u>div</u><u></u></pre>
                                 <pre>10              <u></u><u>div</u><u></u></pre>
-                                <pre>11         <u></u><u>body<u></u></u></pre>
+                                <pre>11         <u></u><u>body</u><u></u></pre>
                                 <pre>12<u></u><u>html</u><u></u></pre>
                             </form>
                         </div>
@@ -353,7 +353,13 @@
                                 <p></p>
                             </div>
                             <div class = "js-code">
-
+                                <pre>write(id, text, k, sp) {</pre>
+                                <pre>if (k < text.length) {</pre>
+                                <pre>document.getElementById(id).innerHTML += text.charAt(k);</pre>
+                                <pre>k++</pre>
+                                <pre>setTimeout(write, sp, id, text, k, sp);</pre>
+                                <pre>}</pre>
+                                <pre>}</pre>
                             </div>
                         </div>
                         <div class = "code-terminal">
