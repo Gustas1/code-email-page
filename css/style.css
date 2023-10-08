@@ -308,10 +308,17 @@ hr {
 }
 
 .coding-class {
+    display: flex;
+    flex-direction: row;
     flex-basis: 100%; 
     margin-left: 40px; 
     margin-top: 20px;
     height: 61vh;
+}
+
+#html-nums {
+    color: rgba(63,156,203,255);
+    text-align: right;
 }
 
 u {

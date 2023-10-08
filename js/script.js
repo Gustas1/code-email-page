@@ -76,8 +76,6 @@ for(let j = 0; j < tags.length; j++) {
    }
 }
 
-
-
 const cssdiv = document.getElementById('csspage');
 const allcssu = cssdiv.getElementsByTagName('u');
 const symbols = [',', ':', ';', ': ', '; '];
@@ -114,6 +112,11 @@ for(let i = 0; i < allcssu.length; i++) {
     if(allcssu[i].innerHTML == "'Segoe UI'") {
         allcssu[i].className = "css-font";
     }
+}
+const htmldivnum = document.getElementById('html-nums');
+const pnums = htmldivnum.getElementsByTagName('p');
+for(let i = 0; i < pnums.length; i++) {
+    pnums[i].innerHTML = i+1;
 }
 
 const cssdivnum = document.getElementById('css-div-nums');
