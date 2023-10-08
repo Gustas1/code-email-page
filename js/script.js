@@ -113,16 +113,21 @@ for(let i = 0; i < allcssu.length; i++) {
         allcssu[i].className = "css-font";
     }
 }
+
+const htmldiv = document.getElementById('html-code');
 const htmldivnum = document.getElementById('html-nums');
-const pnums = htmldivnum.getElementsByTagName('p');
-for(let i = 0; i < pnums.length; i++) {
-    pnums[i].innerHTML = i+1;
+const prehtml = htmldiv.getElementsByTagName('pre');
+
+for(let i = 0; i < prehtml.length; i++) {
+    htmldivnum.innerHTML += "<p>" + (i+1) +"</p>"
+    
 }
 
+const csscode = document.getElementById('css-code');
 const cssdivnum = document.getElementById('css-div-nums');
-const pdivnum = cssdivnum.getElementsByTagName('p');
-for(let i = 0; i < pdivnum.length; i++) {
-    pdivnum[i].innerHTML = i+1;
+const precss = csscode.getElementsByTagName('pre');
+for (let i = 0; i < precss.length; i++) {
+    cssdivnum.innerHTML += "<p>" + (i+1) + "</p>";
 }
 
 const jsdivnum = document.getElementById('js-div-nums');
