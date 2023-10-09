@@ -475,3 +475,7 @@ div > pre {
 .prpbrack {
     color: rgb(214, 20, 214);
 }
+
+.comment { 
+    color: rgba(89,139,64,255)
+}

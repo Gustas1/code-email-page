@@ -182,6 +182,10 @@ function write(id, text, k, sp) {
   }
 }
 
+function exitPage() {
+    close();
+}
+
 let j = 0;
 const csspage = document.getElementById('csspage');
 const coding = document.getElementById('coding');
