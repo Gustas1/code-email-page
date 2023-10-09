@@ -450,3 +450,28 @@ div > pre {
 #js-div-nums {
     text-align: right;
 }
+
+.jsnums {
+    color: rgba(63,156,203,255);
+    text-align: right;
+}
+
+.js-code > pre {
+    margin-left: 30px;
+}
+
+.jsbrack {
+    color: yellow;
+}
+
+.params {
+    color: grey;
+}
+
+.jsstuff {
+    color: rgba(63,156,203,255);
+}
+
+.prpbrack {
+    color: rgb(214, 20, 214);
+}

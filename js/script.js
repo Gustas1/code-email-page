@@ -48,12 +48,6 @@ for(let i = 0; i < gtlt.length; i++) {
     if(i % 2 != 0) {
         gtlt[i].innerHTML = "&gt";
     }
-    // if(i >= 21) {
-    //     if(i % 2 == 0) {
-    //         console.log(gtlt[i].innerHTML)
-    //             gtlt[i].innerHTML = "&lt/";
-    //     }       
-    // }
 }
 
 const tags = ['html', 'body', 'div', 'h1', 'h2', 'p']
@@ -130,12 +124,41 @@ for (let i = 0; i < precss.length; i++) {
     cssdivnum.innerHTML += "<p>" + (i+1) + "</p>";
 }
 
+const jsdiv = document.getElementById('js-id');
 const jsdivnum = document.getElementById('js-div-nums');
-const jspnum = jsdivnum.getElementsByTagName('p');
-for(let i = 0; i < jspnum.length; i++) {
-    jspnum[i].innerHTML = i+1;
+const prejs = jsdiv.getElementsByTagName('pre');
+
+for(let i = 0; i < prejs.length; i++) {
+    jsdivnum.innerHTML += "<p>" + (i+1) + "</p>";
 }
 
+const alljsu = jsdiv.getElementsByTagName('u');
+const bracks = ['(', ' (', ')', ') ', '{', ' {', '}', '} '];
+const params = ['id', 'text', 'k', 'sp'];
+const jsstuff = ['function', 'if'];
+for(let i = 0; i < alljsu.length; i++) {
+    for(let j = 0; j < bracks.length; j++) {
+        if(alljsu[i].innerHTML == bracks[j]) {
+            alljsu[i].className = 'jsbrack';
+            if(alljsu[i].innerHTML == bracks[j] && (i == 13 || i == 18 || i == 19)) {
+                alljsu[i].className = 'prpbrack';
+            }
+            if(alljsu[i].innerHTML == bracks[j] && (i == 20|| i ==  22|| i == 24 || i == 26 || i == 28 || i == 35)) {
+                alljsu[i].className = 'jsstuff';
+            }
+        }
+    }
+    for(let l = 0; l < params.length; l++) {
+        if(alljsu[i].innerHTML == params[l]) {
+            alljsu[i].className = 'params';
+        }
+    }
+    for(let z = 0; z < jsstuff.length; z++) {
+        if(alljsu[i].innerHTML == jsstuff[z]) {
+            alljsu[i].className = 'jsstuff';
+        }
+    }
+}
 
 function swap(id, cls) {
     document.getElementById(id).classList.toggle(cls);
@@ -179,7 +202,6 @@ function showCSSDiv() {
     jsHdr.style.backgroundColor = "rgb" + "(" + 44 + "," + 44 + "," + 44 + ")"
 }
 
-let k = 0;
 function showHTMLDiv() {
     csspage.style.display = "none";
     coding.style.display = "flex";
