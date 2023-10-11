@@ -104,6 +104,22 @@ body {max-height: 100vh;height: 100vh; overflow: hidden;}
     border-radius: 3px;
 }
 
+.dropdown-content > div {
+    display: flex;
+    font-size: medium;
+    padding: 5px 25px 5px 40px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.dropdown-content > div:hover {
+    background-color: rgb(48, 48, 146);
+}
+
+.dropdown-content > div > p:first-child {
+    flex-grow: 1;
+}
+
 .dropdown-content > p {
     font-size: medium;
     padding: 5px 5px 5px 40px;
@@ -354,7 +370,7 @@ pre {
 }
 
 .c-i {
-    width: auto;
+    width: 155px;
     padding: 0px 5px 0px 5px;
     font-size: medium;
     color: white;
@@ -378,7 +394,7 @@ pre {
     overflow: hidden;
     color: rgb(160, 160, 160);
     font-family: monospace;
-    height: 18vw;
+    height: 40vw;
     width: 84vw;
     border-top: 1px solid grey;
     padding-left: 20px;
